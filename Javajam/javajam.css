@@ -1,0 +1,52 @@
+/* Global styles for the document (use the body element selector) with background color #FCEBB6; text color #221811; and Tahoma, Arial, or any sans-serif font. */
+body {
+  background-color: #fcebb6;
+  color: #221811;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+/* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
+header {
+  background-color: #d2b48c;
+  color: #8c3826;
+  text-align: center;
+}
+
+/* Styles for the h1 element selector that configure 200% line height. */
+h1 {
+  line-height: 200%;
+}
+
+/* Styles for the h2 element selector that configure #8C3826 text color. */
+h2 {
+  color: #8c3826;
+}
+
+/* Styles for the nav element selector that configure centered, bold text. Hint: Use the CSS text-align and font-weight properties. */
+nav {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styles for the footer element selector that configure background color #D2B48C, small font size (.60em), italics, and centered text. */
+footer {
+  background-color: #d2b48c;
+  font-size: 0.6em;
+  font-style: italic;
+  text-align: center;
+}
+
+/* google font class */
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* wrapper to use as a div in the body on each page */
+#wrapper {
+  background-color: #fefaeb;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
