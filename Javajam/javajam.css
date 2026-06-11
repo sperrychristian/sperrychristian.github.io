@@ -1,39 +1,87 @@
 /* Global styles for the document (use the body element selector) with background color #FCEBB6; text color #221811; and Tahoma, Arial, or any sans-serif font. */
 body {
+  margin: 0;
   background-color: #fcebb6;
   color: #221811;
   font-family: Tahoma, Arial, sans-serif;
+  background-image: url("images/fadedroad50.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /*image stays put if content eventually needs to be scrolled through */
 }
-
+/* styles for main */
+main {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  display: block;
+}
 /* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
 header {
   background-color: #d2b48c;
   color: #8c3826;
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* standard styles for images */
+img {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Styles for the h1 element selector that configure 200% line height. */
 h1 {
-  line-height: 200%;
+  padding: 10px;
+  font-size: 3em;
 }
 
 /* Styles for the h2 element selector that configure #8C3826 text color. */
 h2 {
+  padding: 5px;
   color: #8c3826;
+  font-size: 2em;
+}
+
+/* styles for h3 elements */
+h3 {
+  padding: 5px;
+  color: #8c3826;
+  font-size: 1.5em;
+}
+
+/* styles for h3 elements */
+h4 {
+  background-color: #d2b48c;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  padding-bottom: 0.25em;
 }
 
 /* Styles for the nav element selector that configure centered, bold text. Hint: Use the CSS text-align and font-weight properties. */
 nav {
   text-align: center;
   font-weight: bold;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  nav a {
+    text-decoration: none;
+  }
 }
 
 /* Styles for the footer element selector that configure background color #D2B48C, small font size (.60em), italics, and centered text. */
 footer {
+  border-top: 2px solid #8c3826;
   background-color: #d2b48c;
   font-size: 0.6em;
   font-style: italic;
   text-align: center;
+  padding: 1em;
 }
 
 /* google font class */
@@ -43,10 +91,64 @@ footer {
   font-style: normal;
 }
 
+/* image css */
+.container {
+  width: auto;
+  height: 300px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* wrapper to use as a div in the body on each page */
 #wrapper {
   background-color: #fefaeb;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  min-width: 900px;
+  max-width: 1280px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* paragraph padding */
+p {
+  padding: 5px;
+}
+
+/* padding for address div and list in menu*/
+.address {
+  padding: 5px;
+}
+
+/* color for list titles on menu */
+dt {
+  color: #8c3826;
+}
+
+/* styling for menu photo class */
+.menphoto {
+  width: 22em;
+  height: auto;
+  float: right;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+/* styling to avoid w3c validation error for h4 tag in music */
+h3.month {
+  background-color: #d2b48c;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  padding-bottom: 0.25em;
+}
+
+/* styling for details class used on music page */
+.music {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
 }
