@@ -1,3 +1,8 @@
+/* universal selector */
+* {
+  box-sizing: border-box;
+}
+
 /* Global styles for the document (use the body element selector) with background color #FCEBB6; text color #221811; and Tahoma, Arial, or any sans-serif font. */
 body {
   margin: 0;
@@ -12,18 +17,14 @@ body {
 }
 /* styles for main */
 main {
-  padding-left: 2em;
-  padding-right: 2em;
+  margin-left: 200px;
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0em;
   padding-bottom: 2em;
   display: block;
-}
-/* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
-header {
-  background-color: #d2b48c;
-  color: #8c3826;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  background-color: #fef6c2;
+  overflow: auto;
 }
 
 /* standard styles for images */
@@ -33,36 +34,60 @@ img {
   height: auto;
 }
 
-/* Styles for the h1 element selector that configure 200% line height. */
+/* header styling */
 h1 {
   padding: 10px;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
-/* Styles for the h2 element selector that configure #8C3826 text color. */
 h2 {
   padding: 5px;
   color: #8c3826;
   font-size: 2em;
+  padding-left: 3em;
+  padding-right: 2em;
 }
 
-/* styles for h3 elements */
 h3 {
   padding: 5px;
   color: #8c3826;
   font-size: 1.5em;
+  padding-left: 3em;
+  padding-right: 2em;
 }
 
-/* styles for h3 elements */
 h4 {
   background-color: #d2b48c;
   font-size: 1.2em;
-  padding-left: 0.5em;
-  padding-bottom: 0.25em;
+  padding-left: 3em;
+  padding-right: 2em;
+  padding-bottom: 0;
+  text-transform: capitalize;
+  border-bottom: 1px solid #221811;
+  clear: left;
 }
 
-/* Styles for the nav element selector that configure centered, bold text. Hint: Use the CSS text-align and font-weight properties. */
+/* div styling */
+div {
+  padding-left: 3em;
+  padding-right: 2em;
+}
+
+/* list styling */
+ul {
+  padding-left: 3em;
+  padding-right: 2em;
+}
+
+dl {
+  padding-left: 3em;
+  padding-right: 2em;
+}
+
+/* Styles for the nav */
 nav {
+  float: left;
+  width: 200px;
   text-align: center;
   font-weight: bold;
   font-size: 1.5em;
@@ -70,9 +95,55 @@ nav {
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  nav a {
-    text-decoration: none;
-  }
+}
+
+/* nav a styling */
+nav a {
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #fef6c2;
+}
+
+nav a:visited {
+  color: #d2b48c;
+}
+
+nav a:hover {
+  color: #cc9933;
+}
+
+nav ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
+header {
+  background-color: #d2b48c;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 240px;
+  background-image: url("images/coffeelogo.jpg");
+  background-repeat: no-repeat;
+  color: #231814;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:link {
+  color: #231814;
+}
+
+header a:visited {
+  color: #231814;
+}
+
+header a:hover {
+  color: #fef6c2;
 }
 
 /* Styles for the footer element selector that configure background color #D2B48C, small font size (.60em), italics, and centered text. */
@@ -84,7 +155,25 @@ footer {
   text-align: center;
   padding: 1em;
 }
+/* styling for details class */
+.details {
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow: auto;
+}
 
+/* styling for onethird class */
+.onethird {
+  float: left;
+  width: 33%;
+}
+
+/* class to float images on music page */
+.floatleft {
+  float: left;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
 /* google font class */
 .oi-regular {
   font-family: "Oi", serif;
@@ -104,22 +193,20 @@ footer {
 
 /* wrapper to use as a div in the body on each page */
 #wrapper {
-  background-color: #fefaeb;
+  background-color: #231814;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   max-width: 1280px;
+  min-width: 900px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* paragraph padding */
+/* paragraph styling */
 p {
-  padding: 5px;
-}
-
-/* padding for address div and list in menu*/
-.address {
-  padding: 5px;
+  padding-left: 3em;
+  padding-right: 2em;
 }
 
 /* color for list titles on menu */
@@ -127,13 +214,37 @@ dt {
   color: #8c3826;
 }
 
-/* styling for menu photo class */
-.menphoto {
-  width: 22em;
-  height: auto;
-  float: right;
-  padding: 10px;
-  padding-right: 20px;
+/* styling for homehero */
+#homehero {
+  background-size: 100% 100%;
+  width: auto;
+  height: 300px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* styling for heromugs */
+#heromugs {
+  background-size: 100% 100%;
+  width: auto;
+  height: 300px;
+  background-image: url("images/heromugs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* styling for heroguitar */
+#heroguitar {
+  background-size: 100% 100%;
+  width: auto;
+  height: 300px;
+  background-image: url("images/heroguitar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* styling to avoid w3c validation error for h4 tag in music */
@@ -142,13 +253,4 @@ h3.month {
   font-size: 1.2em;
   padding-left: 0.5em;
   padding-bottom: 0.25em;
-}
-
-/* styling for details class used on music page */
-.music {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
-  padding-left: 10em;
 }
